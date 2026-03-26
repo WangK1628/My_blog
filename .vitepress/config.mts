@@ -3,6 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Kevin",
+// 关键代码：开启忽略死链接
+  ignoreDeadLinks: true, 
   description: "个人使用的技术博客",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -20,9 +22,9 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
+
 })
